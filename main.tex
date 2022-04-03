@@ -5,18 +5,18 @@
 \usepackage{cite}
 
 \usepackage{tikz}
+\usepackage{array}
 \usepackage{graphicx}
+\graphicspath{{figures/}}
 
 \usepackage{xcolor}
 \usepackage{lipsum}
 
 \usepackage{setspace}
-\doublespacing
+\onehalfspacing
 \usepackage[top=2cm, bottom=3cm, left=2.5cm, right=2.5cm]{geometry}
 
 \usepackage{subfiles}
-\graphicspath{{figures/}}
-
 
 \pdfinfo{
    /Author (Samuel Emile Mulzer)
@@ -30,11 +30,9 @@
 \subject{W-Seminararbeit}
 \title{Erweiterung des SIR-Modells im Bezug auf Covid-19}
 \subtitle{Effekte abnehmender Immunität auf die langfristige Entwicklung der Pandemie in Deutschland}
-\author{Samuel Mulzer \thanks{Betreuung durch Michael Fuchs} \thanks{Unterstützung durch Karl Bindl}}
+\author{Samuel Mulzer \thanks{Betreuung durch Michael Fuchs}}
 \date{\today{}}
 \publishers{Gymnasium Leopoldinum Passau}
-
-
 
 
 \begin{document}
@@ -46,80 +44,5 @@
     \addcontentsline{toc}{section}{Gesellschaftliche Relevanz mathematischer Modelle im Rahmen von Covid19}
     \label{sec:introduction}
     \subfile{sections/introduction}
-
-
-
-  % \section{Grundlegende Konzepte der Modellierung infektiöser Krankheiten}
-  %   \label{sec:basic_concepts}
-  %
-  %
-  %
-  %
-  % \section{Das Kermack-McKendrick SIR-Modell}
-  %   \label{sec:kmck}
-  %
-  %   \begin{equation}
-  %     \label{eq:sir}
-  %     \setlength{\jot}{20pt}
-  %     \begin{aligned}
-  %       \frac{dS}{dt} = -\beta  I \frac{S}{N}, \\
-  %       \frac{dI}{dt} = \beta I \frac{S}{N} - \gamma I, \\
-  %       \frac{dR}{dt} =  \gamma I
-  %     \end{aligned}
-  %   \end{equation}
-  %
-  %   \begin{figure}
-  %     \includegraphics{figures/seir}
-  %     \caption{SIR}
-  %   \end{figure}
-  %
-  %
-  %
-  %
-  % \section{Entwicklung eines erweiterten Modells}
-  %   \label{sec:enhanced_model}
-  %
-  %
-  %
-  %
-  %
-  % \section{Simulation}
-  %   \label{sec:simulation}
-  %
-  %
-  % \begin{tikzpicture}
-  %   \foreach \t\x in {S/0, E/1, I/2, R/3}
-  %     \draw (4*\x, 0) rectangle node{\t} (4*\x+2, 2);
-  %
-  %   \foreach \t\x in {$\beta I S$/2, $\epsilon E$/6, $\gamma I$/10}
-  %     \draw[->] (\x,1) -- node[auto]{\t} (\x+2,1);
-  % \end{tikzpicture}
-
-  % \begin{figure}[h!]
-  %   \includegraphics[width=1\textwidth]{img/sir.png}
-  %   \caption[SIR]{Chart of SIR Model}
-  % \end{figure}
-
-  % \begin{center}
-  %   \begin{tabular}{ |c|c|c| }
-  %    \hline
-  %    cell1 & cell2 & cell3 \\
-  %    cell4 & cell5 & cell6 \\
-  %    cell7 & cell8 & cell9 \\
-  %    \hline
-  %   \end{tabular}
-  % \end{center}
-  %
-  %
-  %   \section*{Fazit}
-  %     \addcontentsline{toc}{section}{Fazit}
-  %     \label{sec:conclusion}
-
-    Li writes \cite[S100]{li18}
-
-    \bibliography{ref}
-    \bibliographystyle{alpha}
-
-    \listoffigures
 
 \end{document}
